@@ -19,7 +19,7 @@ public class Library {
         int a;
         while (true) {
             try {
-                System.out.print(prompt + ": ");
+                System.out.print(prompt);
                 String s = sc.nextLine();
                 a = Integer.parseInt(s);
                 if (a >= m && a <= n) {

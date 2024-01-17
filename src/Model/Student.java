@@ -4,16 +4,15 @@ public class Student implements Comparable<Student> {
     private int studentID;
     private String name;
     private int semester;
-    private String courseName;
+    private int courseName;
     private int totalCourse;
 
     public Student(int studentID, String name, int semester,
-                   String courseName, int totalCourse) {
+                   int courseName) {
         this.studentID = studentID;
         this.name = name;
         this.semester = semester;
         this.courseName = courseName;
-        this.totalCourse = totalCourse;
     }
 
     public int getStudentID() {
@@ -40,11 +39,15 @@ public class Student implements Comparable<Student> {
         this.semester = semester;
     }
 
-    public String getCourseName() {
+    public int getCourseName() {
         return courseName;
     }
 
-    public void setCourseName(String courseName) {
+    public void setCourseName(int courseName) {
+        this.courseName = courseName;
+    }
+
+/*public void setCourseName(String courseName) {
         boolean cond = courseName.equals("JAVA") ||
                 courseName.equals(".NET") ||
                 courseName.equals("C/C++");
@@ -53,7 +56,7 @@ public class Student implements Comparable<Student> {
         } else {
             this.courseName = "sai roi ne!!!!";
         }
-    }
+    }*/
 
     public int getTotalCourse() {
         return totalCourse;
